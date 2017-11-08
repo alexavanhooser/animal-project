@@ -1,0 +1,27 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" (click)="close()">&times;</button>
+      <h4 class="modal-title">Log In</h4>
+      </div>
+    <div class="modal-body">
+      <p>
+        Enter your user name and password here. If You do not have an account, sign up now! 
+      </p>
+      <div class="form-group">  
+        <label for="usr">Username:</label>
+        <input type="text" class="form-control" id="usr">
+      </div>
+      <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd">
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a (click)="register">New Users</a>
+        
+      <button type="button" class="btn btn-primary" (click)="confirm()" >Login</button>
+      <button type="button" class="btn btn-primary" (click)="close()">Cancel</button>
+    </div>
+  </div>
+</div>
