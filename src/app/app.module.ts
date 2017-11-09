@@ -7,13 +7,15 @@ import { BootstrapModalModule } from 'ng2-bootstrap-modal';
 import { LoginComponent } from './login/login.component';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { CardComponent } from './card/card.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ConfirmComponent,
-    CardComponent
+    CardComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
