@@ -1,17 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { RoutingModule} from './app.routes';
 import { BootstrapModalModule } from 'ng2-bootstrap-modal';
 import { LoginComponent } from './login/login.component';
 import { ConfirmComponent } from './confirm/confirm.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ConfirmComponent
+    ConfirmComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
@@ -21,11 +23,12 @@ import { ConfirmComponent } from './confirm/confirm.component';
     // these modules are loaded in order
     RoutingModule
   ],
-        //Don't forget to add the component to entryComponents section
+      //Don't forget to add the component to entryComponents section
   entryComponents: [
     ConfirmComponent
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent], 
+  schemas:   [ NO_ERRORS_SCHEMA ]
 })
 export class AppModule { }
