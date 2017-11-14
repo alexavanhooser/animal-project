@@ -8,6 +8,10 @@ import { LoginComponent } from './login/login.component';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { CardComponent } from './card/card.component';
 import { MapComponent } from './map/map.component';
+import { User } from './models/user'; 
+import { NgModel } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AmChartsModule } from "@amcharts/amcharts3-angular";
 
 @NgModule({
   declarations: [
@@ -15,12 +19,14 @@ import { MapComponent } from './map/map.component';
     LoginComponent,
     ConfirmComponent,
     CardComponent,
-    MapComponent
+    MapComponent, 
   ],
   imports: [
     BrowserModule,
     BootstrapModalModule,
-    
+    ReactiveFormsModule,
+    AmChartsModule,
+  
     // Routing modules should be the last thing on the list, otherwise bad things happen
     // these modules are loaded in order
     RoutingModule
