@@ -1,0 +1,43 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" (click)="close()">&times;</button>
+      <h4 class="modal-title">Log In</h4>
+      </div>
+    <div class="modal-body">
+      <p>
+        Enter your user name and password here. If You do not have an account, sign up now! 
+      </p>
+      <form 
+      [formGroup]="form"
+      (ngSubmit)="onSubmit(form.value)">
+      <!-- <ul> -->
+        <!-- <li> -->
+          <label for="name">Username: </label>
+          <input type="email" id="email" required class="form-control"       
+           name="name"
+          formControlName="email">
+        <!-- </li> -->
+        <!-- <label for="usr">Username:</label>
+        <input type="text"  id="usr">
+      </div> -->
+      <!-- <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd">
+        </div> -->
+        <!-- <li> -->
+          <label for="password">Password: </label>
+          <input type="password" id="password" required class="form-control"       
+           name="password"
+          formControlName="password">
+
+    <!-- </div>     -->
+    <!-- <div class="modal-footer"> -->
+        <a (click)="register()">New Users</a>
+        <button type="submit" class="btn btn-success">Login</button>
+    <!-- </div> -->
+  <!-- </div> -->
+</form>
+</div>
+</div>
+</div>

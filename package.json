@@ -12,6 +12,7 @@
   },
   "private": true,
   "dependencies": {
+    "@amcharts/amcharts3-angular": "^1.5.0",
     "@angular/animations": "^4.2.4",
     "@angular/common": "^4.2.4",
     "@angular/compiler": "^4.2.4",
@@ -23,7 +24,12 @@
     "@angular/router": "^4.2.4",
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.5",
     "core-js": "^2.4.1",
+<<<<<<< HEAD
     "lodash": "^4.17.4",
+=======
+    "ng-dynamic": "^3.0.2",
+    "ng2-bootstrap-modal": "^1.0.1",
+>>>>>>> e08349ebf54380ed503ca31795826f9cb4c28d15
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
