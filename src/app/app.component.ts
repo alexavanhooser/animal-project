@@ -3,7 +3,7 @@ import { LoginComponent } from './login/login.component';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { DialogService } from 'ng2-bootstrap-modal';
 import { CardComponent } from './card/card.component';
-import { User } from './models/user'; 
+import { User } from './models/user';
 import { FormGroup, FormControl } from '@angular/forms';
 import { MapComponent } from './map/map.component';
 
