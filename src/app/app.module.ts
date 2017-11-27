@@ -15,7 +15,7 @@ import 'rxjs/add/operator/map';
 import { UserService } from './services/user.service';
 import { RegisterComponent } from './register/register.component';
 import { HttpModule } from '@angular/http';
-
+import { customHttpProvider, CustomHttp } from './services/customHttp';
 
 @NgModule({
   declarations: [
@@ -41,7 +41,8 @@ import { HttpModule } from '@angular/http';
     ConfirmComponent, 
     RegisterComponent
   ],
-  providers: [ UserService ],
+  providers: [ UserService, 
+                customHttpProvider],
   bootstrap: [AppComponent],
   schemas:   [ NO_ERRORS_SCHEMA ]
 })

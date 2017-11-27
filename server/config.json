@@ -1,0 +1,4 @@
+{
+    "connectionString": "mongodb://localhost:27017/animal-project-users",
+    "apiUrl": "http://localhost:4000"
+}
