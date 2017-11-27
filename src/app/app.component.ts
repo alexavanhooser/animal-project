@@ -13,6 +13,8 @@ import { MapComponent } from './map/map.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  public title = 'Undecided Animal Adventure';
+  
   form;
   constructor(private dialogService:DialogService) {}
     showConfirm() {

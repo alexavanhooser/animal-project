@@ -11,34 +11,19 @@
       <form 
       [formGroup]="form"
       (ngSubmit)="onSubmit(form.value)">
-      <!-- <ul> -->
-        <!-- <li> -->
+
           <label for="name">Username: </label>
           <input type="email" id="email" required class="form-control"       
            name="name"
           formControlName="email">
-        <!-- </li> -->
-        <!-- <label for="usr">Username:</label>
-        <input type="text"  id="usr">
-      </div> -->
-      <!-- <div class="form-group">
-          <label for="pwd">Password:</label>
-          <input type="password" class="form-control" id="pwd">
-        </div> -->
-        <!-- <li> -->
           <label for="password">Password: </label>
           <input type="password" id="password" required class="form-control"       
            name="password"
           formControlName="password">
-
-    <!-- </div>     -->
-    <!-- <div class="modal-footer"> -->
-      <br>
-        <a class="centered" (click)="register()">New Users</a>
+        <br>
         <button class="centered" type="submit" class="btn btn-success">Login</button>
-    <!-- </div> -->
-  <!-- </div> -->
 </form>
 </div>
+<button class="btn btn-default right" (click)="register()">Register Here</button>
 </div>
 </div>

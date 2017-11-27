@@ -1,12 +1,15 @@
+// import { String } from 'core-js/library/web/timers';
+
 const express = require('express');
 const path = require('path');
 const http = require('http');
 const bodyParser = require('body-Parser');
-
+const mongoose = require('mongoose');
 // Set up API Routes
 const api = require('./server/routes/api');
 
 const app = express();
+mongoose.connect('mongodb://localhost/myappdatabase');
 
 // Parsers for POST data
 app.use(bodyParser.json());
@@ -33,3 +36,13 @@ const server = http.createServer(app);
 
 // Listen on provided port
 server.listen(port, () => console.log('API running on local host: '+  port));
+
+let UserSchema = new mongoose.Schema({
+    userName: String,
+    password: String,
+    name: String, 
+    points: Number
+});
+
+// Create a model based on the schema
+let User = mongoose.model('User', UserSchema);

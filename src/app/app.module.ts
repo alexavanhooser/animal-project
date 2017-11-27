@@ -12,6 +12,10 @@ import { NgModel } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AmChartsModule } from "@amcharts/amcharts3-angular";
 import 'rxjs/add/operator/map';
+import { UserService } from './services/user.service';
+import { RegisterComponent } from './register/register.component';
+import { HttpModule } from '@angular/http';
+
 
 @NgModule({
   declarations: [
@@ -20,22 +24,24 @@ import 'rxjs/add/operator/map';
     ConfirmComponent,
     CardComponent,
     MapComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     BootstrapModalModule,
     ReactiveFormsModule,
     AmChartsModule,
-
+    HttpModule,
     // Routing modules should be the last thing on the list, otherwise bad things happen
     // these modules are loaded in order
     RoutingModule
   ],
       //Don't forget to add the component to entryComponents section
   entryComponents: [
-    ConfirmComponent
+    ConfirmComponent, 
+    RegisterComponent
   ],
-  providers: [],
+  providers: [ UserService ],
   bootstrap: [AppComponent],
   schemas:   [ NO_ERRORS_SCHEMA ]
 })
