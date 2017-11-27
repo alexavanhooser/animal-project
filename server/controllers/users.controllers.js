@@ -35,6 +35,7 @@ function getAll(req, res) {
         .catch(function (err) {
             res.status(400).send(err);
         });
+        console.log('Outputting users', res);
 }
 
 function getCurrent(req, res) {

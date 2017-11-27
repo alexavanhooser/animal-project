@@ -6,6 +6,7 @@ import { CardComponent } from './card/card.component';
 import { User } from './models/user';
 import { FormGroup, FormControl } from '@angular/forms';
 import { MapComponent } from './map/map.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',

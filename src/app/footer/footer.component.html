@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div>
-      <button class="button flex" onclick="showDiv()">
+      <button class="button flex" (click)="showDiv()">
         <i class="fa fa-chevron-circle-down fa-5x" aria-hidden="true"></i>
       </button>
     </div>
@@ -57,3 +57,14 @@
      </div>
    </div>
 </div>
+
+<!-- <script>
+  function showDiv() {
+    var x = document.getElementById("displayFooter");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+</script> -->

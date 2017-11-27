@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-footer',
@@ -8,6 +9,18 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   constructor() { }
+
+  showDiv() {
+    let element: HTMLElement = document.getElementById('displayFooter');
+    if(element.style.display === "block") 
+    {
+      element.style.display = 'none';
+    }
+    else
+    {
+      element.style.display = 'block';
+    }
+  }
 
   ngOnInit() {
   }

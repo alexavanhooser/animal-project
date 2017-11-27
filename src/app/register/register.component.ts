@@ -35,9 +35,11 @@ export class RegisterComponent extends DialogComponent<RegisterModel, boolean> i
           console.log('Registration successful');
           // DO something after registering
           // i.e. navigating to another page
+          alert('Successful Registration');
         },
         error => {
           console.log("There was an error creating the account");
+          alert('Registration not successful');
         });
   }
 

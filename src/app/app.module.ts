@@ -16,6 +16,7 @@ import { UserService } from './services/user.service';
 import { RegisterComponent } from './register/register.component';
 import { HttpModule } from '@angular/http';
 import { customHttpProvider, CustomHttp } from './services/customHttp';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { customHttpProvider, CustomHttp } from './services/customHttp';
     CardComponent,
     MapComponent,
     RegisterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
