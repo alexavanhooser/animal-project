@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "Server for Animal Project that holds user info",
     "dependencies": {
+        "bcrypt": "^1.0.3",
         "bcryptjs": "^2.1.0",
         "body-parser": "^1.13.2",
         "cors": "^2.8.1",

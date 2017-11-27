@@ -92,7 +92,7 @@ function create(userParam) {
         var user = _.omit(userParam, 'password');
  
         // add hashed password to user object
-        user.hash = bcrypt.hashSync(userParam.password, 10);
+        // user.hash = bcrypt.hashSync(userParam.password, 10);
  
         db.users.insert(
             user,
