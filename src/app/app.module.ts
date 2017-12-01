@@ -12,10 +12,11 @@ import { NgModel } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AmChartsModule } from "@amcharts/amcharts3-angular";
 import 'rxjs/add/operator/map';
-import { UserService } from './services/user.service';
+
+
+import { AnimalService  } from './services/customHTTP';
 import { RegisterComponent } from './register/register.component';
 import { HttpModule } from '@angular/http';
-import { customHttpProvider, CustomHttp } from './services/customHttp';
 import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
@@ -43,8 +44,7 @@ import { FooterComponent } from './footer/footer.component';
     ConfirmComponent, 
     RegisterComponent
   ],
-  providers: [ UserService, 
-                customHttpProvider],
+  providers: [ AnimalService],
   bootstrap: [AppComponent],
   schemas:   [ NO_ERRORS_SCHEMA ]
 })
