@@ -1,0 +1,380 @@
+
+    {
+        "name": "African Elephant",
+        "imageUrl": "african_elephant.jpg",
+        "status": "Vulnerable",
+        "popuation": "415,000",
+        "continent": "Africa",
+        "facts": {
+            "factOne": "The African elephant is the largest animal walking the Earth.",
+            "factTwo": "Their herds wander through 37 countries in Africa.",
+            "factThree": "Their large ears allow them to radiate excess heat."
+        }
+    }
+    {
+        "name": "Cheetah",
+        "imageUrl": "cheetah.jpg",
+        "status": "Threatened/Vulnerable",
+        "popuation": "7,000",
+        "continent": "Africa",
+        "facts": {
+            "factOne": "The cheetah has an extra-large heart, nostrils and lungs that help the cat process more oxygen while running.",
+            "factTwo": "The cheetah's spotted fur helps it blend into the grass so that it can stay hidden from prey until ready to pursue.",
+            "factThree": "The animal's body is also aerodynamic for more speed."
+        }
+    }
+    {
+        "name": "Lion",
+        "imageUrl": "lion.jpg",
+        "status": "Vulnerable",
+        "popuation": "20,000",
+        "continent": "Africa",
+        "facts": {
+            "factOne": "Lions are the only cats that live in groups, which are called prides.",
+            "factTwo": "Female lions are the pride's primary hunters.",
+            "factThree": "Males defend the pride's territory, which may include some 100 square miles of grasslands, scrub, or open woodlands."
+        }
+    }
+    {
+        "name": "Mountain Gorilla",
+        "imageUrl": "gorilla.jpg",
+        "status": "Critically Endangered",
+        "popuation": "880",
+        "continent": "Africa",
+        "facts": {
+            "factOne": "Mountain gorillas live in forests high in the mountains, at elevations of 8,000 to 13,000 feet.",
+            "factTwo": "They have thicker fur, and more of it, compared to other great apes.",
+            "factThree": "The gorilla population increased from 620 animals in 1989 to around 880 today."
+        }
+    }
+    {
+        "name": "African Rhino",
+        "imageUrl": "rhino.jpg",
+        "status": "Critically Endangered",
+        "popuation": "5,000",
+        "continent": "Africa",
+        "facts": {
+            "factOne": "Black rhinos are browsers rather than grazers, and their pointed lip helps them feed on leaves from bushes and trees.",
+            "factTwo": "Between 1960 and 1995, black rhino numbers dropped by a sobering 98%, to less than 2,500.",
+            "factThree": "Rhino horns grow as much as three inches a year, and have been known to grow up to five feet long."
+        }
+    }
+    {
+        "name": "Giraffe",
+        "imageUrl": "giraffe.jpg",
+        "status": "Vulnerable",
+        "popuation": "98,000",
+        "continent": "Africa",
+        "facts": {
+            "factOne": "Giraffes are the world's tallest mammals, thanks to their towering legs and long necks.",
+            "factTwo": "These long legs allow giraffes to run as fast as 35 miles an hour over short distances.",
+            "factThree": "A Giraffe’s heart weighs about 25 pounds, it has to be that big to pump blood all the way to its brain."
+        }
+    }
+    {
+        "name": "Zebra",
+        "imageUrl": "zebra.jpg",
+        "status": "Near Threatened",
+        "popuation": "750,000",
+        "continent": "Africa",
+        "facts": {
+            "factOne": "Each animal's stripes are as unique as fingerprints—no two are exactly alike.",
+            "factTwo": "Zebras are social animals that spend time in herds.",
+            "factThree": "If an animal is attacked, its family will come to its defense, circling the wounded zebra and attempting to drive off predators."
+        }
+    }
+    {
+        "name": "Chimpanzee",
+        "imageUrl": "chimpanzee.jpg",
+        "status": "Endangered",
+        "popuation": "175,000",
+        "continent": "Africa",
+        "facts": {
+            "factOne": "Chimps are highly social animals, care for their offspring for years and can live to be over 50.",
+            "factTwo": "Chimpanzees are our closest cousins; we share about 98 percent of our genes.",
+            "factThree": "They use sticks to fish termites out of mounds and bunches of leaves to sop up drinking water."
+        }
+    }
+    {
+        "name": "Giant Panda",
+        "imageUrl": "giant_panda.jpg",
+        "status": "Endangered",
+        "popuation": "175,000",
+        "continent": "Asia",
+        "facts": {
+            "factOne": "Pandas make their homes from hollowed-out logs or stumps of coniferous trees.",
+            "factTwo": "Pandas have an insatiable hunger, eating for an average of 12 hours a day.",
+            "factThree": "Due to their preference for solitude, pandas often search for certain pheromone-based warnings to avoid contact with other pandas. They are, by nature, loners."
+        }
+    }
+    {
+        "name": "Tiger",
+        "imageUrl": "tiger.jpg",
+        "status": "Endangered",
+        "popuation": "",
+        "continent": "Asia",
+        "facts": {
+            "factOne": "Tigers wait until dark to hunt, as they typically hunt alone.",
+            "factTwo": "One of the largest reasons for their sharp decline in population is due to their fur; they are often hunted for their pelts.",
+            "factThree": "Tigers share 95.6% of their DNA with the common housecat."
+        }
+    }
+    {
+        "name": "Orangutan",
+        "imageUrl": "orangutan.jpg",
+        "status": "",
+        "popuation": "",
+        "continent": "Asia",
+        "facts": {
+            "factOne": "",
+            "factTwo": "",
+            "factThree": ""
+        }
+    }
+    {
+        "name": "Snow Leopard",
+        "imageUrl": "snow_leopard.jpg",
+        "status": "",
+        "popuation": "",
+        "continent": "Asia",
+        "facts": {
+            "factOne": "",
+            "factTwo": "",
+            "factThree": ""
+        }
+    }
+    {
+        "name": "Leopard",
+        "imageUrl": "leopard.jpg",
+        "status": "",
+        "popuation": "",
+        "continent": "Asia",
+        "facts": {
+            "factOne": "",
+            "factTwo": "",
+            "factThree": ""
+        }
+    }
+    {
+        "name": "Llama",
+        "imageUrl": "llama.jpg",
+        "status": "",
+        "popuation": "",
+        "continent": "South America",
+        "facts": {
+            "factOne": "",
+            "factTwo": "",
+            "factThree": ""
+        }
+    }
+    {
+        "name": "Jaguar",
+        "imageUrl": "jaguar.jpg",
+        "status": "",
+        "popuation": "",
+        "continent": "South America",
+        "facts": {
+            "factOne": "",
+            "factTwo": "",
+            "factThree": ""
+        }
+    }
+    {
+        "name": "Macaw",
+        "imageUrl": "macaw.jpg",
+        "status": "",
+        "popuation": "",
+        "continent": "South America",
+        "facts": {
+            "factOne": "",
+            "factTwo": "",
+            "factThree": ""
+        }
+    }
+    {
+        "name": "Bald Eagle",
+        "imageUrl": "bald_eagle.jpg",
+        "status": "Least Concern",
+        "popuation": "70,000",
+        "continent": "North America",
+        "facts": {
+            "factOne": "The bald eagle has been the national emblem of the United States of America since 1782.",
+            "factTwo": "Bald Eagles usually mate for life.",
+            "factThree": "Bald Eagles hold the record for building the largest bird’s nests."
+        }
+    }
+    {
+        "name": "Red-tailed Hawk",
+        "imageUrl": "red_tailed_hawk.jpg",
+        "status": "Least Concern",
+        "popuation": "23 million",
+        "continent": "North America",
+        "facts": {
+            "factOne": "Native American culture is often focused around symbolism and respect for animals. The red tailed hawk is considered sacred among Native Americans, and is respected throughout the community.",
+            "factTwo": "They have great eyesight. Their eyesight is so advanced that they are able to see a small rodent on the ground, even when it is 100 feet below them.",
+            "factThree": "Red-tailed Hawks don’t have to eat everyday. They have a pouch between their mouth and stomach where they store food."
+        }
+    }
+    {
+        "name": "Bison",
+        "imageUrl": "bison.jpg",
+        "status": "Near Threatened",
+        "popuation": "500,000",
+        "continent": "North America",
+        "facts": {
+            "factOne": "On May 9, 2016, President Obama signed the National Bison Legacy Act into law, officially making the American bison the national mammal of the United States.",
+            "factTwo": "Bison are the largest mammal in North America. Male bison weigh up to 2,000 pounds and females weigh up to 1,000 pounds.",
+            "factThree": "You can judge a bison’s mood by its tail. When it hangs down and switches naturally, the bison is usually calm. If the tail is standing straight up, watch out! It may be ready to charge."
+        }
+    }
+    {
+        "name": "Wolverine",
+        "imageUrl": "wolverine.jpg",
+        "status": "",
+        "popuation": "",
+        "continent": "North America",
+        "facts": {
+            "factOne": "",
+            "factTwo": "",
+            "factThree": ""
+        }
+    }
+    {
+        "name": "Crocodile",
+        "imageUrl": "crocodile.jpg",
+        "status": "Least Concern",
+        "popuation": "",
+        "continent": "North America",
+        "facts": {
+            "factOne": "",
+            "factTwo": "",
+            "factThree": ""
+        }
+    }
+    {
+        "name": "Big Horn Sheep",
+        "imageUrl": "big_horn_sheep.jpg",
+        "status": "",
+        "popuation": "",
+        "continent": "North America",
+        "facts": {
+            "factOne": "",
+            "factTwo": "",
+            "factThree": ""
+        }
+    }
+    {
+        "name": "Polar Bear",
+        "imageUrl": "polar_bear.jpg",
+        "status": "Vulnerable",
+        "popuation": "25,800",
+        "continent": "North America",
+        "facts": {
+            "factOne": "The polar bear or the sea/ice bear are the world's largest land predators.",
+            "factTwo": "Most obvious is the polar bear's color, which can range from a butter cream yellow to a very pure white.",
+            "factThree": "A polar bear’s eyesight and sense of smell must be strong. Reportedly, a polar bear can smell a seal up to 20 miles away."
+        }
+    }
+    {
+        "name": "Grizzly Bear",
+        "imageUrl": "grizzly_bear.jpg",
+        "status": "Threatened",
+        "popuation": "50,000",
+        "continent": "North America",
+        "facts": {
+            "factOne": "The Grizzly Bear can 8 feet tall when it stands on back feet.",
+            "factTwo": "Grizzly bear is huge animal. Most bears weigh between 300 and 800 pounds, but some captured animals weighed up to 1400 pounds.",
+            "factThree": "Cubs will stay with their mother 2-4 years. She is very protective and if you come close to her cubs she can easily kill you."
+        }
+    }
+    {
+        "name": "Monarch Butterfly",
+        "imageUrl": "monarch_butterfly.jpg",
+        "status": "Endangered",
+        "popuation": "33 million",
+        "continent": "North America",
+        "facts": {
+            "factOne": "They have a 10cm wingspan and weigh between 0.25 to 0.75 grams",
+            "factTwo": "The wings flap slower than other butterflies at about 300 to 720 times a minute.",
+            "factThree": "Senses of smell and vision help the Monarch butterflies to assess its environment."
+        }
+    }
+    {
+        "name": "Kangaroo",
+        "imageUrl": "kangaroo.jpg",
+        "status": "Vulnerable",
+        "popuation": "25 million",
+        "continent": "Australia",
+        "facts": {
+            "factOne": "",
+            "factTwo": "",
+            "factThree": ""
+        }
+    }
+    {
+        "name": "Koala",
+        "imageUrl": "koala.jpg",
+        "status": "",
+        "popuation": "",
+        "continent": "Australia",
+        "facts": {
+            "factOne": "",
+            "factTwo": "",
+            "factThree": ""
+        }
+    }
+    {
+        "name": "Wombat",
+        "imageUrl": "wombat.jpg",
+        "status": "",
+        "popuation": "",
+        "continent": "Australia",
+        "facts": {
+            "factOne": "",
+            "factTwo": "",
+            "factThree": ""
+        }
+    }
+    {
+        "name": "Duck-billed Platypus",
+        "imageUrl": "duck_billed_platypus.jpg",
+        "status": "",
+        "popuation": "",
+        "continent": "Australia",
+        "facts": {
+            "factOne": "",
+            "factTwo": "",
+            "factThree": ""
+        }
+    }
+    {
+        "name": "Iberian Lynx",
+        "imageUrl": "iberian_lynx.jpg",
+        "status": "",
+        "popuation": "",
+        "continent": "Europe",
+        "facts": {
+            "factOne": "",
+            "factTwo": "",
+            "factThree": ""
+        }
+    }
+    {
+        "name": "Bavarian Pine Vole",
+        "imageUrl": "bavarian_pine_vole.jpg",
+        "status": "",
+        "popuation": "",
+        "continent": "Europe",
+        "facts": {
+            "factOne": "",
+            "factTwo": "",
+            "factThree": ""
+        }
+    }
+
+
+
+
+
+
+    

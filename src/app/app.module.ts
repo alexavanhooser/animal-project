@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { RoutingModule} from './app.routes';
 import { BootstrapModalModule } from 'ng2-bootstrap-modal';
 import { LoginComponent } from './login/login.component';
-import { ConfirmComponent } from './confirm/confirm.component';
+// import { ConfirmComponent } from './confirm/confirm.component';
 import { CardComponent } from './card/card.component';
 import { MapComponent } from './map/map.component';
 import { User } from './models/user';
@@ -12,20 +12,21 @@ import { NgModel } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AmChartsModule } from "@amcharts/amcharts3-angular";
 import 'rxjs/add/operator/map';
-import { UserService } from './services/user.service';
-import { RegisterComponent } from './register/register.component';
+
+
+import { AnimalService  } from './services/customHTTP';
+// import { RegisterComponent } from './register/register.component';
 import { HttpModule } from '@angular/http';
-import { customHttpProvider, CustomHttp } from './services/customHttp';
 import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ConfirmComponent,
+    // ConfirmComponent,
     CardComponent,
     MapComponent,
-    RegisterComponent,
+    // RegisterComponent,
     FooterComponent
   ],
   imports: [
@@ -40,11 +41,10 @@ import { FooterComponent } from './footer/footer.component';
   ],
       //Don't forget to add the component to entryComponents section
   entryComponents: [
-    ConfirmComponent, 
-    RegisterComponent
+    // ConfirmComponent, 
+    // RegisterComponent
   ],
-  providers: [ UserService, 
-                customHttpProvider],
+  providers: [ AnimalService],
   bootstrap: [AppComponent],
   schemas:   [ NO_ERRORS_SCHEMA ]
 })
