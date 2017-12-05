@@ -43,3 +43,7 @@ a:hover {
   background-color: #00cccc;
   box-shadow: 0 2px grey;
 }
+
+.btn-group-lg>.btn, .btn-lg {
+  background-color: #FFCC00 ;
+}
