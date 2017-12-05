@@ -14,7 +14,7 @@ import { AmChartsModule } from "@amcharts/amcharts3-angular";
 import 'rxjs/add/operator/map';
 
 
-import { AnimalService  } from './services/customHTTP';
+import { AnimalService  } from './services/animalService';
 // import { RegisterComponent } from './register/register.component';
 import { HttpModule } from '@angular/http';
 import { FooterComponent } from './footer/footer.component';

@@ -7,18 +7,27 @@ import { User } from './models/user';
 import { FormGroup, FormControl } from '@angular/forms';
 import { MapComponent } from './map/map.component';
 import { FooterComponent } from './footer/footer.component';
+import { AnimalService } from './services/animalService';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [AnimalService]
 })
 export class AppComponent {
-  public title = 'Undecided Animal Adventure';
+  public title = 'SpeciesHop';
+
+  animal_id="";
+  animal=null;
+
   
   form;
-  constructor(private dialogService:DialogService) {}
-    showConfirm() {
+  constructor(
+    private animalService:AnimalService
+  ) {}
+    // showConfirm() {
     // let disposable = this.dialogService.addDialog(ConfirmComponent, { });
 
     // This would be where the information for the user login would be placed
@@ -35,15 +44,20 @@ export class AppComponent {
     //   //   alert('declined');
     //   // }
     //   });
-    }
-    onSubmit(user){
-      console.log('User is: ', user);
-    }
+    // }
+
+
+
+    
+  
 
   ngOnInit() {
-    this.form = new FormGroup({
-      email: new FormControl(''),
-      password: new FormControl('')
-    });
+    
+    this.animalService.getAnimal()
+        .subscribe(data => {
+        console.log('ge Animal return');
+        this.animal = data;
+      });
+  
   }
   }
