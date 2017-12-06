@@ -9,6 +9,12 @@ const mongoose = require('mongoose');
 
 const Animal = require('./models/animals');
 
+// const cors = require('cors');
+// app.use(cors({
+//   origin: '*'
+// }))
+
+
 
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json());
@@ -54,32 +60,21 @@ router.route('/animal')
     Animal.find(function(err, animal) {
         if (err)
             res.send(err);
-
+      // console.log(animal)
         res.json(animal);
     });
 });
 
+// function get(request, reply) {
+//   var findObject = {};
+//   for (var key in request.query) {
+//       findObject[key] = request.query[key]
+//   }
+//   collection.find(findObject).toArray(function(error, students) {
+//       reply(students);
+//   })
+// }
 
-
-app.get("/api/pet/:id", function(req, res) {
-	const id = req.params.id;
-	console.log(id);
-	db.collection('Animals').findOne({"_id": ObjectId(id)}, function(err, item) {
-		if (err) {
-			res.send(err);
-		} else {
-			console.log(item);
-			const animal = {
-				name: item.name,
-				status: item.status,
-				population: item.population,
-        continent: item.continent,
-        facts: item.facts
-			};
-			res.send(animal);
-		}
-	});
-});
 
 
 
@@ -90,10 +85,6 @@ app.use('/api', router);
 // Starting the server 
 app.listen(port);
 console.log('contected on port ' + port);
-
-
-
-
 
 
 
