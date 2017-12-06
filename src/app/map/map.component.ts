@@ -7,44 +7,22 @@ import { AmChartsService, AmChart } from "@amcharts/amcharts3-angular";
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css']
 })
+
+
 export class MapComponent implements OnInit {
   private chart: AmChart;
-  
-  constructor(private AmCharts: AmChartsService) { }
 
-  ngAfterViewInit() {
-    this.chart = this.AmCharts.makeChart("chartdiv", {
+  constructor(private AmCharts: AmChartsService) { 
+   
+  };
 
+  ngOnInit(){
+  };
 
-
-
-      "type": "map",
-      "theme": "none",
-      "projection": "miller",
+  animalPopup(){
+    alert('europe');
     
-      "dataProvider": {
-        "map": "worldLow",
-        "getAreasFromMap": true
-      },
-      "areasSettings": {
-        "autoZoom": true,
-        "selectedColor": "#CC0000"
-      },
-      "smallMap": {},
-      "export": {
-        "enabled": true,
-        "position": "bottom-right"
-      }
-    } );
   }
 
-  ngOnDestroy() {
-    if (this.chart) {
-      this.AmCharts.destroyChart(this.chart);
-    }
-  }
 
-  ngOnInit() {
-  }
-
-}
+};
