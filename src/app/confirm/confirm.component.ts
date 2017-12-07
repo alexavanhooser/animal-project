@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DialogComponent, DialogService } from "ng2-bootstrap-modal";
 import { AnimalService } from "../services/animalService";
-import { HttpClient } from '@angular/common/http/src/client';
+import { HttpClientModule, HttpClient } from '@angular/common/http/';
 // import { FormGroup, FormControl } from '@angular/forms';
 // import { RegisterComponent } from '../register/register.component';
 export interface ConfirmModel {
