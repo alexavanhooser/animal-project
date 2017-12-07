@@ -1,20 +1,33 @@
-// import { Component, OnInit } from '@angular/core';
-// import { DialogComponent, DialogService } from "ng2-bootstrap-modal";
+import { Component, OnInit } from '@angular/core';
+import { DialogComponent, DialogService } from "ng2-bootstrap-modal";
 // import { FormGroup, FormControl } from '@angular/forms';
 // import { RegisterComponent } from '../register/register.component';
 
-// export interface ConfirmModel {
-//   email:string;
-//   password:string;
-// }
+export interface ConfirmModel {
+  title:string;
+  message:string;
+}
 
-// @Component({
-//   selector: 'app-confirm',
-//   templateUrl: './confirm.component.html',
-//   styleUrls: ['./confirm.component.css']
-// })
+@Component({
+  selector: 'app-confirm',
+  templateUrl: './confirm.component.html',
+  styleUrls: ['./confirm.component.css']
+})
 
-// export class ConfirmComponent extends DialogComponent<ConfirmModel, boolean> implements ConfirmModel {
+export class ConfirmComponent extends DialogComponent<ConfirmModel, boolean> implements ConfirmModel {
+    title: string;
+    message: string;
+
+    constructor(dialogService: DialogService) {
+        super(dialogService);
+    }
+
+    confirm(){
+        this.result = true;
+        this.close();
+    }
+    
+
 //   form;
 //   email:string;
 //   password: string;
@@ -43,4 +56,4 @@
 //     });
 //   }
 
-// }
+}

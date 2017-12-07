@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginComponent } from './login/login.component';
 import { NgClass } from '@angular/common';
-// import { ConfirmComponent } from './confirm/confirm.component';
+import { ConfirmComponent } from './confirm/confirm.component';
 import { DialogService } from 'ng2-bootstrap-modal';
 import { FormGroup, FormControl } from '@angular/forms';
 import { MapComponent } from './map/map.component';
@@ -24,14 +24,16 @@ export class AppComponent implements OnInit {
 
   
   constructor(
-    private animalService:AnimalService
-  ) {}
-
-    
-  ngOnInit () {
-
-    // get selected pet_id from local storage, and then load from db.
+    private animalService:AnimalService,
+    private dialogService: DialogService) {}
+    showConfirm() { 
+      let disposable = this.dialogService.addDialog(ConfirmComponent, {});
+    }
    
+
+  
+  ngOnInit () {
+    // get selected pet_id from local storage, and then load from db.
 
   };
 

@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { RoutingModule} from './app.routes';
 import { BootstrapModalModule } from 'ng2-bootstrap-modal';
 import { LoginComponent } from './login/login.component';
-// import { ConfirmComponent } from './confirm/confirm.component';
+import { ConfirmComponent } from './confirm/confirm.component';
 import { CardComponent } from './card/card.component';
 import { MapComponent } from './map/map.component';
 import { User } from './models/user';
@@ -24,7 +24,7 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    // ConfirmComponent,
+    ConfirmComponent,
     CardComponent,
     MapComponent,
     // RegisterComponent,
@@ -43,7 +43,7 @@ import { FooterComponent } from './footer/footer.component';
   ],
       //Don't forget to add the component to entryComponents section
   entryComponents: [
-    // ConfirmComponent, 
+    ConfirmComponent, 
     // RegisterComponent
   ],
   providers: [ AnimalService, HttpClientModule],
