@@ -4,9 +4,8 @@
 
 .map {
   height: 100vh;
-  width: 100vw;
-  justify-items: center;
-  
+  width: 100%;
+  margin-left: 50px;
 }
 
 .land:hover {
@@ -15,9 +14,6 @@
   stroke-width: 2 !important;
 }
 
-.land:active {
-  fill: #F7931E;
-}
 
 
 .land {
@@ -28,51 +24,5 @@
   stroke-width:0.1;
 }
 
-/* #asia {
-  fill: red;
-  fill-opacity: 1;
-  stroke:white;
-  stroke-opacity: 1;
-  stroke-width:0.1;
-} 
 
-#europe {
-  fill: orange;
-  fill-opacity: 1;
-  stroke:white;
-  stroke-opacity: 1;
-  stroke-width:0.1;
-} 
-
-#australia {
-  fill: pink;
-  fill-opacity: 1;
-  stroke:white;
-  stroke-opacity: 1;
-  stroke-width:0.1;
-}  
-
-#south_america {
-  fill: yellow;
-  fill-opacity: 1;
-  stroke:white;
-  stroke-opacity: 1;
-  stroke-width:0.1;
-} 
-
-#africa {
-  fill: green;
-  fill-opacity: 1;
-  stroke:white;
-  stroke-opacity: 1;
-  stroke-width:0.1;
-} 
-
-#north_america {
-  fill: blue;
-  fill-opacity: 1;
-  stroke:white;
-  stroke-opacity: 1;
-  stroke-width: 1;
-}  */
 

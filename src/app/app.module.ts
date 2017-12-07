@@ -14,9 +14,10 @@ import { AmChartsModule } from "@amcharts/amcharts3-angular";
 import 'rxjs/add/operator/map';
 
 
-import { AnimalService  } from './services/customHTTP';
+import { AnimalService  } from './services/animalService';
 // import { RegisterComponent } from './register/register.component';
 import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
@@ -35,6 +36,7 @@ import { FooterComponent } from './footer/footer.component';
     ReactiveFormsModule,
     AmChartsModule,
     HttpModule,
+    HttpClientModule,
     // Routing modules should be the last thing on the list, otherwise bad things happen
     // these modules are loaded in order
     RoutingModule
@@ -44,7 +46,7 @@ import { FooterComponent } from './footer/footer.component';
     // ConfirmComponent, 
     // RegisterComponent
   ],
-  providers: [ AnimalService],
+  providers: [ AnimalService, HttpClientModule],
   bootstrap: [AppComponent],
   schemas:   [ NO_ERRORS_SCHEMA ]
 })
