@@ -9,7 +9,7 @@ import { AmChartsService, AmChart } from "@amcharts/amcharts3-angular";
 })
 
 
-export class MapComponents implements OnInit {
+export class MapComponent implements OnInit {
   private chart: AmChart;
 
   constructor(private AmCharts: AmChartsService) { }
