@@ -9,8 +9,8 @@
 
 .land:hover {
   fill: #FBD43B;
-  stroke: #fff !important;
-  stroke-width: 2 !important;
+  /* stroke: #fff !important;
+  stroke-width: 2 !important; */
 }
 
 
@@ -18,9 +18,9 @@
 .land {
   fill: #8CC63F;
   fill-opacity: 1;
-  stroke:white;
+  /* stroke:white;
   stroke-opacity: 1;
-  stroke-width:0.1;
+  stroke-width:0.1; */
 }
 
 

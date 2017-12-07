@@ -9,7 +9,6 @@ export class AnimalService {
   
   options;
   results;
-  public postList;
   data: any = []
 
   private apipath = 'http://localhost:4000/api/animal';
