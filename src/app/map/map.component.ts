@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AmChartsService, AmChart } from "@amcharts/amcharts3-angular";
+import {  } from "";
 
 
 @Component({
@@ -20,9 +21,9 @@ export class MapComponent implements OnInit {
   };
 
   animalPopup(){
-    alert('europe');
-    
+    alert();
   }
+
 
 
 };
