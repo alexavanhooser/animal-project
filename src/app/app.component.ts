@@ -37,9 +37,9 @@ export class AppComponent implements OnInit {
 
   };
 
-  goAnimals() {
-    this.animalService.getAnimal().then(data => this.animal = data);
-   }
+  // goAnimals() {
+  //   this.animalService.getAnimal().then(data => this.animal = data);
+  //  }
 
  }
 

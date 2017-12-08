@@ -20,19 +20,12 @@ export class AnimalService {
 
   
  
-  getAnimal(){
-    return new Promise(resolve => {
+  getAnimals(){
       return this.http.get(this.apipath)
         .map(res => {
           return res.json();
-        })
-        .subscribe(data => {
-          this.data = data;
-          console.log(data);
-          resolve(this.data);
         });
-    });
-
+      }
 
 
 
@@ -45,7 +38,7 @@ export class AnimalService {
     //   //   post.data.created = post.data.created * 1000;
     //   // })
     
-  }
+ 
 
   
 

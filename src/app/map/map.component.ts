@@ -3,6 +3,7 @@ import { AmChartsService, AmChart } from "@amcharts/amcharts3-angular";
 import { ConfirmComponent } from "../confirm/confirm.component";
 import { DialogComponent, DialogService } from "ng2-bootstrap-modal";
 import { AnimalinfoComponent } from '../animalinfo/animalinfo.component';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -14,10 +15,17 @@ import { AnimalinfoComponent } from '../animalinfo/animalinfo.component';
 
 export class MapComponent implements OnInit {
   private chart: AmChart;
+  data: any = [];
+  public postList;
+  animal: any;
+
+  private apipath = 'http://localhost:4000/api/animal';
 
   constructor(
     private AmCharts: AmChartsService,
     private dialogService: DialogService,
+    private http: HttpClient,
+    
   ) { 
     
     
@@ -64,9 +72,7 @@ export class MapComponent implements OnInit {
     console.log(continent);
   }
 
-
-
-
+  
 
 
 };

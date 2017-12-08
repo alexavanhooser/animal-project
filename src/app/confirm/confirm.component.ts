@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DialogComponent, DialogService } from "ng2-bootstrap-modal";
 import { AnimalService } from "../services/animalService";
 import { HttpClientModule, HttpClient } from '@angular/common/http/';
+import { getRandomString } from 'selenium-webdriver/safari';
 // import { FormGroup, FormControl } from '@angular/forms';
 // import { RegisterComponent } from '../register/register.component';
 export interface ConfirmModel {
@@ -16,11 +17,12 @@ export interface ConfirmModel {
   providers: [AnimalService]
 })
 
-export class ConfirmComponent extends DialogComponent<ConfirmModel, boolean> implements ConfirmModel {
+export class ConfirmComponent extends DialogComponent<ConfirmModel, boolean> implements ConfirmModel, OnInit{
     title: string;
     message: string;
     continent: string;
-
+    animal: any;
+ 
     data: any = [];
     public postList;
   
@@ -28,6 +30,7 @@ export class ConfirmComponent extends DialogComponent<ConfirmModel, boolean> imp
 
     constructor(dialogService: DialogService,
         private http: HttpClient,
+        private animalService: AnimalService,
     ) {
         super(dialogService);
     }
@@ -38,14 +41,43 @@ export class ConfirmComponent extends DialogComponent<ConfirmModel, boolean> imp
     }
     
 
-    getAnimalPic() {
-        this.http.get(this.apipath).subscribe(data => {
+    // getAnimalPic() {
+    //     this.http.get(this.apipath).subscribe(data => {
+    //         this.data = data;
+    //         console.log(data);
+    //       });  
+    // }
+
+    getAnimals() {
+        return this.http.get(this.apipath).subscribe(data => {
             this.data = data;
-            console.log(data);
+        
+
+            // console.log(this.animal);
+          });  
+    }
+  
+    getRandomAnimal(data, num) {
+      this.animal = data[num];
+      console.log(num);
+      return this.animal;
+    }
+   
+
+    ngOnInit() {
+
+        this.animalService.getAnimals()
+        .subscribe(data => {
+            // this.animals = data;
+            this.getRandomAnimal(data, Math.floor(Math.random() * 25));
+            // console.log(data);
+            // resolve(this.data);
           });
 
-    }
-
+        // this.getRandomAnimal()
+        
+      
+      }
 //   form;
 //   email:string;
 //   password: string;
