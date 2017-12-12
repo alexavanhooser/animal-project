@@ -20,7 +20,6 @@ import { ContinentService } from './services/continentService';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
-import { AnimalinfoComponent } from './animalinfo/animalinfo.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +30,6 @@ import { AnimalinfoComponent } from './animalinfo/animalinfo.component';
     MapComponent,
     // RegisterComponent,
     FooterComponent,
-    AnimalinfoComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +45,6 @@ import { AnimalinfoComponent } from './animalinfo/animalinfo.component';
       //Don't forget to add the component to entryComponents section
   entryComponents: [
     ConfirmComponent,
-    AnimalinfoComponent 
     // RegisterComponent
   ],
   providers: [ AnimalService, HttpClientModule, ContinentService],

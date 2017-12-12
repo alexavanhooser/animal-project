@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { AmChartsService, AmChart } from "@amcharts/amcharts3-angular";
 import { ConfirmComponent } from "../confirm/confirm.component";
 import { DialogComponent, DialogService } from "ng2-bootstrap-modal";
-import { AnimalinfoComponent } from '../animalinfo/animalinfo.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 
