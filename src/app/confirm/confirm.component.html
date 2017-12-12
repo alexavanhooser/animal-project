@@ -6,6 +6,7 @@
       </div>
     <div class="modal-body">
       <h1>{{continent}}</h1>
+      <h2>{{animal.continent}}</h2>
       <h1>Is this where I belong??</h1>
         <!-- <h1>{{animal.name}}</h1> -->
         <h1>{{animal.name}}</h1>
@@ -13,8 +14,8 @@
       <p>
         Click on the correct answer:
       </p>
-      <button>Yes</button>
-      <button>No</button>
+      <button (click)="confirmYes()"> Yes </button>
+      <button (click)="confirmNo()"> No </button>
       <!-- <form 
       [formGroup]="form"
       (ngSubmit)="onSubmit(form.value)">

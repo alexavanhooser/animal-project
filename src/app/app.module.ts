@@ -15,6 +15,7 @@ import 'rxjs/add/operator/map';
 
 
 import { AnimalService  } from './services/animalService';
+import { ContinentService } from './services/continentService';
 // import { RegisterComponent } from './register/register.component';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
@@ -49,7 +50,7 @@ import { AnimalinfoComponent } from './animalinfo/animalinfo.component';
     AnimalinfoComponent 
     // RegisterComponent
   ],
-  providers: [ AnimalService, HttpClientModule],
+  providers: [ AnimalService, HttpClientModule, ContinentService],
   bootstrap: [AppComponent],
   schemas:   [ NO_ERRORS_SCHEMA ]
 })
