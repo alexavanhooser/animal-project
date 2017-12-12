@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { AmChartsService, AmChart } from "@amcharts/amcharts3-angular";
 import { ConfirmComponent } from "../confirm/confirm.component";
 import { DialogComponent, DialogService } from "ng2-bootstrap-modal";
-import { AnimalinfoComponent } from '../animalinfo/animalinfo.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 
@@ -18,6 +17,7 @@ export class MapComponent implements OnInit {
   data: any = [];
   public postList;
   animal: any;
+  public continent; 
 
   private apipath = 'http://localhost:4000/api/animal';
 
@@ -37,39 +37,39 @@ export class MapComponent implements OnInit {
   };
 
   showAnimalEurope() { 
-    let continent = document.getElementsByClassName("land")[0].getAttribute("id");
-    let disposable = this.dialogService.addDialog(ConfirmComponent, {});
-    console.log(continent);
+    this.continent = document.getElementsByClassName("land")[0].getAttribute("id");
+    let disposable = this.dialogService.addDialog(ConfirmComponent, {continent : this.continent});
+    console.log(this.continent);
   }
 
   showAnimalAsia() { 
-    let continent = document.getElementsByClassName("land")[1].getAttribute("id");
-    let disposable = this.dialogService.addDialog(ConfirmComponent, {});
-    console.log(continent);
+     this.continent = document.getElementsByClassName("land")[1].getAttribute("id");
+    let disposable = this.dialogService.addDialog(ConfirmComponent, {continent : this.continent});
+    console.log(this.continent);
   }
 
   showAnimalNorthAmerica() { 
-    let continent = document.getElementsByClassName("land")[2].getAttribute("id");
-    let disposable = this.dialogService.addDialog(ConfirmComponent, {});
-    console.log(continent);
+    this.continent = document.getElementsByClassName("land")[2].getAttribute("id");
+    let disposable = this.dialogService.addDialog(ConfirmComponent, {continent : this.continent});
+    console.log(this.continent);
   }
 
   showAnimalAfrica() { 
-    let continent = document.getElementsByClassName("land")[3].getAttribute("id");
-    let disposable = this.dialogService.addDialog(ConfirmComponent, {});
-    console.log(continent);
+    this.continent = document.getElementsByClassName("land")[3].getAttribute("id");
+    let disposable = this.dialogService.addDialog(ConfirmComponent, {continent : this.continent});
+    console.log(this.continent);
   }
 
   showAnimalSouthAmerica() { 
-    let continent = document.getElementsByClassName("land")[4].getAttribute("id");
-    let disposable = this.dialogService.addDialog(ConfirmComponent, {});
-    console.log(continent);
+    this.continent = document.getElementsByClassName("land")[4].getAttribute("id");
+    let disposable = this.dialogService.addDialog(ConfirmComponent, {continent : this.continent});
+    console.log(this.continent);
   }
 
   showAnimalAustralia() { 
-    let continent = document.getElementsByClassName("land")[5].getAttribute("id");
-    let disposable = this.dialogService.addDialog(ConfirmComponent, {});
-    console.log(continent);
+    this.continent = document.getElementsByClassName("land")[5].getAttribute("id");
+    let disposable = this.dialogService.addDialog(ConfirmComponent, {continent : this.continent});
+    console.log(this.continent);
   }
 
   
