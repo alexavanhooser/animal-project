@@ -85,6 +85,5 @@ export class ConfirmComponent extends DialogComponent<ConfirmModel, boolean> imp
             // resolve(this.data);
           });
 
-    
 
 }}
