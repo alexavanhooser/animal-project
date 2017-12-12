@@ -1,9 +1,63 @@
-.centered{
+@import url('https://fonts.googleapis.com/css?family=Roboto|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Modak');
+
+/* universal */
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.font {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* logo */
+.green-logo-color {
+  color: #9ac947;
+}
+
+.red-logo-color {
+  color: #f75b00;
+}
+
+.logo-text{
+  font-family: 'Modak', cursive;
+}
+
+/* image */
+
+.img-border {
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px rgba(153, 153, 153, 0.651);
+}
+
+.centered {
     display:    block;
     text-align: center;   
 }
 
-img{
-    height: 200px;
-    width: 200px;
+/* button */
+
+.button-style {
+    /* box-shadow: 5px -6px 25px 2px; */
+    box-shadow: 0 0 0 1px rgba(153, 153, 153, 0.651) inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 rgba(153, 153, 153, 0.651), 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    height: 40px;
+    width: 70px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    transition: 0.30s;
 }
+.button-style:hover, .button-style:focus {
+    background-color: rgba(153, 153, 153, 0.651);
+    box-shadow: 0 0 0 1px rgba(153, 153, 153, 0.651) inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 10px 0 0 rgba(153, 153, 153, 0.651), 0 10px 0 1px rgba(0, 0, 0, 0.4), 0 10px 8px 1px rgba(0, 0, 0, 0.6);
+    top: -2px;
+}
+.button-style:active {
+    box-shadow: 0 0 0 1px rgba(153, 153, 153, 0.651) inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+    transform: translateY(10px);
+}
+.spacing {
+    margin: 10px 10px 25px 10px;
+}
+
