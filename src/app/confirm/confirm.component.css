@@ -12,7 +12,7 @@ img {
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* logo */
+ /*logo marisol edit */
 .green-logo-color {
   color: #9ac947;
 }
@@ -24,6 +24,10 @@ img {
 .logo-text{
   font-family: 'Modak', cursive;
 }
+.popuptext{
+  color: #f75b00;
+  text-align: center;
+}
 
 /* image */
 
@@ -34,7 +38,7 @@ img {
 
 .centered {
     display:    block;
-    text-align: center;   
+    text-align: center;
 }
 
 /* button */
@@ -60,4 +64,3 @@ img {
 .spacing {
     margin: 10px 10px 25px 10px;
 }
-

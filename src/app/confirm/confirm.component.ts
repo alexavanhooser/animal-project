@@ -35,7 +35,6 @@ export class ConfirmComponent extends DialogComponent<ConfirmModel, boolean> imp
     }
 
     
-    
 
     // getAnimalPic() {
     //     this.http.get(this.apipath).subscribe(data => {
@@ -80,7 +79,7 @@ export class ConfirmComponent extends DialogComponent<ConfirmModel, boolean> imp
         this.animalService.getAnimals()
         .subscribe(data => {
             // this.animals = data;
-            this.getRandomAnimal(data, Math.floor(Math.random() * 25));
+            this.getRandomAnimal(data, Math.floor(Math.random() * 27));
             // console.log(data);
             // resolve(this.data);
           });
