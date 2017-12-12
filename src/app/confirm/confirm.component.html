@@ -1,20 +1,26 @@
-<div class="modal-dialog">
+<div class="modal-dialog font text-center">
   <div class="modal-content">
     <div class="modal-header">
       <button type="button" class="close" (click)="close()">&times;</button>
-      <h4 class="modal-title">   </h4>
-      </div>
+      <!-- <h4 class="modal-title title"> SpeciesHop  </h4> -->
+      <h4 class="modal-title title text-center green-logo-color logo-text">
+        Species
+        <span class="red-logo-color">Hop</span>
+      </h4>
+    </div>
     <div class="modal-body">
-      <h1>{{continent}}</h1>
+      <h1>{{continent}}Continent Here</h1>
       <h1>Is this where I belong??</h1>
         <!-- <h1>{{animal.name}}</h1> -->
-        <h1>{{animal.name}}</h1>
-        <img src="../../assets/animals/{{animal.imageUrl}}" alt="">
+      <h1>{{animal.name}}</h1>
+      <img class="img-border" src="../../assets/animals/{{animal.imageUrl}}" alt="">
       <p>
         Click on the correct answer:
       </p>
-      <button>Yes</button>
-      <button>No</button>
+      <div>
+        <button class="button-style spacing">Yes</button>
+        <button class="button-style spacing ">No</button>
+      </div>
       <!-- <form 
       [formGroup]="form"
       (ngSubmit)="onSubmit(form.value)">
