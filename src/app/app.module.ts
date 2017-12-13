@@ -47,6 +47,7 @@ import { SourcesComponent } from './sources/sources.component';
       //Don't forget to add the component to entryComponents section
   entryComponents: [
     ConfirmComponent,
+    SourcesComponent
     // RegisterComponent
   ],
   providers: [ AnimalService, HttpClientModule, ContinentService],

@@ -20,6 +20,14 @@
   font-family: 'Modak', cursive;
 }
 
+a {
+  color: #9ac947;
+}
+
+a:hover {
+  color: #f75b00;
+}
+
 
 iframe {
   align-content:center;
