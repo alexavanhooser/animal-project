@@ -13,7 +13,7 @@ export interface SourcesModel {
 
 
 
-export class SourcesComponent extends DialogComponent<SourcesModel, boolean> implements SourcesModel, OnInit{ 
+export class SourcesComponent extends DialogComponent<SourcesModel, boolean> implements SourcesModel, OnInit{
 
   constructor(dialogService: DialogService,
     private http: HttpClient) {
