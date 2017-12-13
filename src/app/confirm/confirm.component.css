@@ -12,6 +12,23 @@ img {
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* scroll in the modal and hides the scrollbar */
+
+.modal-dialog {
+    height: 100%;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+/* disable background-scroll when modal is open */
+
+
+
+
  /*logo marisol edit */
 .green-logo-color {
   color: #9ac947;
