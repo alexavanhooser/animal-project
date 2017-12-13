@@ -20,6 +20,7 @@ import { ContinentService } from './services/continentService';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
+import { SourcesComponent } from './sources/sources.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FooterComponent } from './footer/footer.component';
     MapComponent,
     // RegisterComponent,
     FooterComponent,
+    SourcesComponent,
   ],
   imports: [
     BrowserModule,

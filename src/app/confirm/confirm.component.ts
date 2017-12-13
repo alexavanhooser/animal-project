@@ -56,7 +56,7 @@ export class ConfirmComponent extends DialogComponent<ConfirmModel, boolean> imp
 
     confirmYes(){
         if(this.continent === this.animal.continent){
-            
+        
         }else{
             alert("Try Again!");
         }     

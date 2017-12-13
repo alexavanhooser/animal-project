@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { } from '@ng-bootstrap/ng-bootstrap';
+import { SourcesComponent } from '../sources/sources.component';
+import { DialogComponent, DialogService } from "ng2-bootstrap-modal";
+
 
 @Component({
   selector: 'app-footer',
@@ -8,7 +10,9 @@ import { } from '@ng-bootstrap/ng-bootstrap';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private dialogService: DialogService,    
+  ) { }
 
   showDiv() {
     let element: HTMLElement = document.getElementById('displayFooter');
@@ -20,6 +24,10 @@ export class FooterComponent implements OnInit {
     {
       element.style.display = 'block';
     }
+  };
+
+  showSources() { 
+    let disposable = this.dialogService.addDialog(SourcesComponent, {});
   }
 
   ngOnInit() {
