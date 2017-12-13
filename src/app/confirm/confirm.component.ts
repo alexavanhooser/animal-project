@@ -56,16 +56,19 @@ export class ConfirmComponent extends DialogComponent<ConfirmModel, boolean> imp
 
     confirmYes(){
         if(this.continent === this.animal.continent){
-        
+            var yes = document.getElementById("hiding");
+            yes.classList.toggle("show");
         }else{
             alert("Try Again!");
         }     
           // this.result = true;
     }
 
+   
     confirmNo(){
         if(this.continent !== this.animal.continent){
-            console.log(true);
+            var no = document.getElementById("hiding");
+            no.classList.toggle("show"); 
         }else{
             alert("Try Again!");
         }     
