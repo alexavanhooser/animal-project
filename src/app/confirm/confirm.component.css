@@ -59,14 +59,14 @@ img {
     text-align: center;
 }
 
-/* button */
+/* button for yes/no */
 
 .button-style {
     /* box-shadow: 5px -6px 25px 2px; */
     box-shadow: 0 0 0 1px rgba(153, 153, 153, 0.651) inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 rgba(153, 153, 153, 0.651), 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
     border-radius: 6px;
-    height: 40px;
-    width: 70px;
+    height: 50px;
+    width: 80px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     transition: 0.30s;
 }
@@ -83,6 +83,8 @@ img {
     margin: 10px 10px 25px 10px;
 }
 
+/* styling for when answer is correct */
+
 #hiding{
     display: none;
 }
@@ -95,3 +97,5 @@ img {
   background-color: #f75b00;
   color: #fff;
 }
+
+
