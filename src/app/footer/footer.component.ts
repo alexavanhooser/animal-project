@@ -12,7 +12,7 @@ export class FooterComponent implements OnInit {
 
   showDiv() {
     let element: HTMLElement = document.getElementById('displayFooter');
-    if(element.style.display === "block") 
+    if(element.style.display === "block")
     {
       element.style.display = 'none';
     }
@@ -22,9 +22,12 @@ export class FooterComponent implements OnInit {
     }
   }
 
-  ngOnInit() {
+  showSources() {
+    let disposable = this.dialogService.addDialog(SourcesComponent, {});
   }
 
+  ngOnInit() {
+  }
 }
 // THIS IS THE JAVASCRIPT FOR THE BUTTON
 // function showDiv() {
