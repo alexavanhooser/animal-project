@@ -1,4 +1,4 @@
-<div class="modal-dialog font text-center">
+<div class="modal-dialog font text-center smaller">
   <div class="modal-content">
     <div class="modal-header">
       <button type="button" class="close" (click)="close()">&times;</button>
@@ -8,7 +8,6 @@
         <span class="red-logo-color">Hop</span>
       </h4>
     </div>
-    <!-- marisol edit -->
     <div class="modal-body">
       <h1>{{continent}}</h1>
       <h1 class="popuptext">Is this where I belong?</h1>
@@ -18,37 +17,29 @@
       <p>
         Click on the correct answer:
       </p>
-<!-- marisol edit -->
       <button class="button-style spacing" (click)="confirmYes()"> Yes </button>
       <button class="button-style spacing" (click)="confirmNo()"> No </button>
       <!-- ADDITIONAL INFORMATION -->
+<<<<<<< HEAD
       <div>
         <h2>Congrats! You are Correct!</h2>
           <p>Status: {{animal.status}}</p>
+=======
+      <div id="hiding">
+        <h4>Congrats! You are Correct!</h4>
+          <p>Staus: {{animal.status}}</p>
+>>>>>>> 472e99f5b628e15187386a4909a77da418b1f662
           <p>Population: {{animal.population}}</p>
           <p>Fact One: {{animal.facts.factOne}}</p>
           <p>Fact Two: {{animal.facts.factTwo}}</p>
           <p>Fact Three: {{animal.facts.factThree}}</p>
+<<<<<<< HEAD
+=======
+          <button class="button-style spacing orange" (click)="close()"> Play Again! </button>
+          
+>>>>>>> 472e99f5b628e15187386a4909a77da418b1f662
       </div>  
       
-
-
-      <!-- <form
-      [formGroup]="form"
-      (ngSubmit)="onSubmit(form.value)">
-
-          <label for="name">Username: </label>
-          <input type="email" id="email" required class="form-control"
-           name="name"
-          formControlName="email">
-          <label for="password">Password: </label>
-          <input type="password" id="password" required class="form-control"
-           name="password"
-          formControlName="password">
-        <br>
-        <button class="centered" type="submit" class="btn btn-success">Login</button>
-</form> -->
-</div>
-<!-- <button class="btn btn-default right" (click)="register()">Register Here</button> -->
-</div>
-</div>
+      
+    </div>
+  </div>

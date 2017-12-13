@@ -82,3 +82,16 @@ img {
 .spacing {
     margin: 10px 10px 25px 10px;
 }
+
+#hiding{
+    display: none;
+}
+
+.show {
+    display: inline;
+}
+
+.orange {
+  background-color: #f75b00;
+  color: #fff;
+}
