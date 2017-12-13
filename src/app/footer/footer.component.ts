@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { } from '@ng-bootstrap/ng-bootstrap';
 import { DialogComponent, DialogService } from "ng2-bootstrap-modal";
 import { SourcesComponent } from '../sources/sources.component';
 
@@ -24,11 +23,12 @@ export class FooterComponent implements OnInit {
     {
       element.style.display = 'block';
     }
+  };
+
+  showSources() { 
+    let disposable = this.dialogService.addDialog(SourcesComponent, {});
   }
 
-  showSources() {
-   let disposable = this.dialogService.addDialog(SourcesComponent, {});
-  }
 
   ngOnInit() {
   }

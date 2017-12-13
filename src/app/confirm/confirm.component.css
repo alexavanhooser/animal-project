@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Ubuntu:400,700');
 @import url('https://fonts.googleapis.com/css?family=Modak');
 
 /* universal */
@@ -26,6 +26,7 @@ img {
 }
 .popuptext{
   color: #f75b00;
+  font-weight: 700;
   text-align: center;
 }
 
