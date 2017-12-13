@@ -1,31 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Ubuntu:400,700');
+
+
 a {
-  color: inherit;
+  color: #fff;
   text-decoration: none;
 }
 a:hover {
   text-decoration: none;
-  color: #00cccc;
+  color: #c9f6ff;
 }
 .image-bg {
-  border: 5px solid lightgrey;
+  border: 5px solid #F75B00;
   height: 350px;
   background-image: url(https://images.unsplash.com/photo-1481399319277-1289301d7c31?auto=format&fit=crop&w=800&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
   background-size: cover;
 }
 
 .title-bg {
-  border: 5px solid lightgrey;
+  border: 5px solid #F75B00;
   height: 350px;
+  background-color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  
 }
 .form-bg {
-  border: 5px solid lightgrey;
+  border: 5px solid #F75B00;
   height: 350px;
+  background-color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  
 }
 .social {
-  background-color: lightgrey;
-  height: 120px;
+  background-color: #F75B00;
+  height: 150px;
   margin-top: 15px;
   padding-top: 15px;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
 }
 .border {
     height: 100px;

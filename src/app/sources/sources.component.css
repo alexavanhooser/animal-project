@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Ubuntu:400,700');
+@import url('https://fonts.googleapis.com/css?family=Modak');
+
+/* universal */
+
+.font {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ /*logo marisol edit */
+.green-logo-color {
+  color: #9ac947;
+}
+
+.red-logo-color {
+  color: #f75b00;
+}
+
+.logo-text{
+  font-family: 'Modak', cursive;
+}
+
+a {
+  color: #9ac947;
+}
+
+a:hover {
+  color: #f75b00;
+}
+
+
+iframe {
+  align-content:center;
+}

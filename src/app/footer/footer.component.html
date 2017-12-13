@@ -1,3 +1,4 @@
+<!-- BUTTON -->
 <div class="container">
   <div class="row">
     <div>
@@ -7,10 +8,13 @@
     </div>
   </div>
 </div>
+
+<!-- FOOTER STARTS -->
 <div class="container" id="displayFooter" style="display:none;">
+  <!-- SOCIAL MEDIA -->
   <div class="row social">
     <div class="col-sm-2 border">
-      <a href="https://github.com/alexavanhooser/animal-project" target="_blank">
+      <a href="https://github.com/alexavanhooser/animal-project" target="blank">
         <i class="fa fa-github-alt fa-5x flex" aria-hidden="true"></i>
       </a>
       <h4 class="flex">Github Source</h4>
@@ -27,11 +31,18 @@
       </a>
       <h4 class="flex">Facebook</h4>
     </div>
-    <div class="col-sm-5">
+    <div class="col-sm-2 border">
+        <a (click)="showSources()">
+          <i class="fa fa-book fa-5x flex" aria-hidden="true"></i>
+        </a>
+        <h4 class="flex">Sources</h4>
+      </div>
+    <div class="col-sm-4">
       <h3>Did we miss your favorite animal?</h3>
       <h5>Leave your comments and/or suggestions below  <i class="fa fa-arrow-down" aria-hidden="true"></i></h5>
     </div>
   </div>
+  <!-- IMAGE  -->
   <div class="row">
     <div class="col-sm-4 image-bg"></div>
     <div class="col-sm-4 title-bg">
@@ -40,6 +51,7 @@
       <button type="button" class="btn btn-lg btn-block">Contribute Now</button>
       </a>
     </div>
+    <!-- FORM -->
     <div class="col-sm-4 form-bg">
       <iframe height="440"
               allowTransparency="true"
