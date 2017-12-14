@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Ubuntu:400,700');
-
-
 a {
   color: #fff;
   text-decoration: none;
@@ -21,14 +19,14 @@ a:hover {
   height: 350px;
   background-color: #fff;
   font-family: 'Ubuntu', sans-serif;
-  
+
 }
 .form-bg {
   border: 5px solid #F75B00;
   height: 350px;
   background-color: #fff;
   font-family: 'Ubuntu', sans-serif;
-  
+
 }
 .social {
   background-color: #F75B00;
