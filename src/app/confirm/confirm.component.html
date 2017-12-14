@@ -23,11 +23,11 @@
 
       <div id="hiding">
         <h4>Congrats! You are Correct!</h4>
-          <p>Status: {{animal.status}}</p>
-          <p>Population: {{animal.population}}</p>
-          <p>Fact One: {{animal.facts.factOne}}</p>
-          <p>Fact Two: {{animal.facts.factTwo}}</p>
-          <p>Fact Three: {{animal.facts.factThree}}</p>
+          <p class="green-logo-color  modal-text-size">Status: <span class="red-logo-color">{{animal.status}}</span></p>
+          <p class="green-logo-color  modal-text-size">Population: <span class="red-logo-color">{{animal.population}}</span></p>
+          <p class="green-logo-color  modal-text-size">Fact One: <span class="black-text">{{animal.facts.factOne}}</span></p>
+          <p class="green-logo-color  modal-text-size">Fact Two: <span class="black-text">{{animal.facts.factTwo}}</span></p>
+          <p class="green-logo-color modal-text-size">Fact Three: <span class="black-text">{{animal.facts.factThree}}</span></p>
           <button class="button-style spacing orange" (click)="close()"> Play Again! </button>
       </div>  
     </div>

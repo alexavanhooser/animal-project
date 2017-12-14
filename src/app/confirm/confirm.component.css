@@ -59,7 +59,7 @@ img {
     text-align: center;
 }
 
-/* button for yes/no */
+/* button for inside the modal*/
 
 .button-style {
     /* box-shadow: 5px -6px 25px 2px; */
@@ -98,4 +98,10 @@ img {
   color: #fff;
 }
 
+.modal-text-size {
+    font-size: 16px;
+}
 
+.black-text {
+    color: black;
+}
