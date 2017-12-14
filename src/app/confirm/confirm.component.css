@@ -55,7 +55,7 @@ img {
 }
 
 .centered {
-    display:    block;
+    display: block;
     text-align: center;
 }
 
@@ -95,6 +95,7 @@ img {
 
 .orange {
   background-color: #f75b00;
+  border: #f75b00;
   color: #fff;
 }
 
